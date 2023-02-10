@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/estilos_zonas.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API"></script>
+
+
+  <!-- Linkea Google Frots con el html para importar un estilo de letras en específico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>Puente San Pedro</title>
+
+</head>
+<body>
+<div class="contenedor-comun">
+  <!-- Botón de regreso -->
+  <a href="Zonas.html" style="text-decoration: none">
+    <button class="volver">
+      <div>Volver</div>
+      <div class="flecha">
+        <img src="img/flecha.png" style="width: 100%; height: 100%">
+      </div>
+    </button>
+  </a>
+
+  <!-- Presentación de la zona -->
+  <div class="informacion-lugar">
+    <div class="presentacion">
+      <h1 class="Nombre-zona">Puente San Pedro</h1>
+      <p class="info-texto">Una de las maneras de recorrerse el Alto Tajo es llegar en coche al Puente de San Pedro, aparcar, y ponerse a caminar por alguno de los muchos caminos forestales que hay por la zona. No os olvidéis la cámara y dejaros guiar por el sonido de la corriente, encontraréis un agua de color turquesa. El Puente de San Pedro se sitúa justo sobre la unión de los ríos Tajo y Gallo, en un lugar muy bello y perfecto para el baño durante los meses de verano. La unión de estos dos rios tiene consecuencias ambientales, más allá de la belleza del lugar.</p>
+    </div>
+    <!-- Foto en movimiento -->
+    <div class="contenedor-dezlizante">
+      <div class="deslizante">
+        <img class="imagen-deslizante" src="img/San_Pedro/san_pedro_3.jpg" alt="Imagen-1">
+        <img class="imagen-deslizante" src="img/San_Pedro/san_pedro_2.jpg" alt="Imagen-2">
+        <img class="imagen-deslizante" src="img/San_Pedro/san_pedro_1.jpg" alt="Imagen-3">
+      </div>
+    </div>
+    <script src="js/deslizante.js"></script>
+  </div>
+
+
+  <!-- Información detallada sobre el lugar -->
+  <div class="contenedor-informacion-detallada">
+    <h2 class="titulo-info-detallada">Información detallada del lugar</h2>
+    <p class="detalles">Este lugar, mágico por sus aguas cristalinas, se encuentra en el Parque Natural Alto Tajo, situado entre el sureste de la provincia de Guadalajara, y el noreste de la de Cuenca. Posee una importancia excepcional, para la conservación de la biodiversidad, y su sistema de cañones y hoces fluviales, están considerados entre los más importantes de Europa.</p>
+    <p class="detalles">En sus alrededores se forma una playa de piedra donde la afluencia de público en época estival es bastante considerable. Sus aguas cristalinas, y la pureza del paisaje os invitarán a tomar un baño en sus aguas. Actualmente, la carretera deja a su lado izquierdo el Puente de San Pedro, el cual se mantiene intacto.</p>
+    <p class="detalles">Muy cerca, podréis visitar otros lugares como el Centro de Interpretación del Alto Tajo, en Zaorejas, donde conoceréis la fauna y flora del lugar, el río Tajo en todo su recorrido, así como los problemas que existen y hacen peligrar el ecosistema del río. En breves documentales en la sala de audiovisuales descubriréis su historia y costumbres.</p>
+  </div>
+
+  <!-- Fotos varias -->
+  <h2 class="fotos-del-lugar">Algunas fotos del lugar</h2>
+  <div class="contenedor-fotos-varias">
+    <div class="fotos-varias">
+      <div class="contenedor-foto-cuadrada">
+        <img class="foto-cuadrada" src="img/San_Pedro/san_pedro_4.png" alt="Imagen-4">
+        <img class="foto-cuadrada" src="img/San_Pedro/san_pedro_5.png" alt="Imagen-5">
+      </div>
+      <div class="foto-alta">
+        <img src="img/San_Pedro/san_pedro_6.jpg" alt="Imagen-6" style="height: 100%; width: 100%">
+      </div>
+      <div class="contenedor-foto-cuadrada">
+        <img class="foto-cuadrada" src="img/San_Pedro/san_pedro_7.png" alt="Imagen-4">
+        <img class="foto-cuadrada" src="img/San_Pedro/san_pedro_8.png" alt="Imagen-5">
+      </div>
+    </div>
+  </div>
+
+  <!-- Webgrafía del lugar -->
+  <footer class="contendor-webgrafia">
+    <div class="otras-paginas">
+      <u><h2 style="font-size: 1.7vw;">Otras páginas</h2></u>
+      <div class="contenedor-paginas">
+        <a class="paginas" href="https://saposyprincesas.elmundo.es/actividades-ninos/guadalajara/aire-libre/rutas-y-excursiones/puente-de-san-pedro/"><p>Diario El Mundo</p></a>
+        <a class="paginas" href="https://alto-tajo.com/item/puente-de-san-pedro/"><p>Portal turístico Alto Tajo</p></a>
+        <a class="paginas" href="http://parquenaturalaltotajo.blogspot.com/2009/07/puente-de-san-pedro.html"><p>Blog Parque Natural Puente San Pedro</p></a>
+      </div>
+    </div>
+    <div class="boton-lugar">
+      <div class="button-borders">
+        <a href="https://goo.gl/maps/wCR6KbMoPEghJJ5R7"><button class="primary-button">¿Cómo llegar?</button></a>
+      </div>
+    </div>
+  </footer>
+
+
+</div>
+</body>
+</html>

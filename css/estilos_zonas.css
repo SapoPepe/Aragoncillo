@@ -1,0 +1,746 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.contenedor-comun{
+    width: 100%;
+}
+
+/*-------------------- Menú de navegación --------------------------------------------*/
+.logo1{
+    display: block; /* Se convierte al logo1 en un bloque */
+    float: left;  /* Hace que flote a la izquierda */
+    height: 44px;   /* Establece la altura y anchura de la imagen */
+    width: 39px;
+    margin-top: 4px;
+}
+.logo2{
+    display: block; /* Se convierte al logo1 en un bloque */
+    float: right;  /* Hace que flote a la derecha */
+    height: 44px;   /* Establece la altura y anchura de la imagen */
+    width: 39px;
+    margin-top: 4px;
+}
+.item{
+    margin: 1em; /* Margen entre palabra y palabra */
+    color: black;
+    font-size: 34px; /* Tamaño de letra*/
+    font-family: 'Marck Script', sans-serif; /* Selecciona el tipo de letra (tiene que estar linkeado en el head)*/
+    text-decoration: none; /* Elimina el subrayado que viene de base para los link a otras páginas */
+}
+.text-menu{
+    display: table;  /* Convierte a las diferentes etiquetas <a> en una tabla */
+    margin: 0 auto;  /* Aliena la tabla al centro de la pantalla automaticamente */
+    margin-top: 5px;
+}
+.bloque-menu{
+    background-color: #F7DC6F;  /* Color del menú */
+    overflow: hidden; /* Antes estaba hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+}
+@media screen and (max-width: 683px){
+    .item{
+        font-size: 14px;
+        margin: .5em;
+    }
+    .inicio{
+        height: 40px;
+    }
+    .logo1{
+        height: 24px;
+        width: 21px;
+    }
+    .logo2{
+        height: 24px;
+        width: 21px;
+    }
+    .bloque-menu{
+        height: 30px;
+    }
+
+}
+
+/* ---------- Mapa ------------------------------------------------------------------------*/
+.contendor-mapa{
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    height: 53vw;
+}
+
+.contenedor-chincheta{
+    z-index: 1;
+    width: 4vw;
+    height: 4vw;
+}
+
+            #chincheta-1{
+                position: absolute;
+                top: 9vw;
+                left: 46vw;
+            }
+            #chincheta-2{
+                position: absolute;
+                top: 20.5vw;
+                left: 49vw;
+            }
+            #chincheta-3{
+                position: absolute;
+                top: 20vw;
+
+            }
+            #chincheta-4{
+                position: absolute;
+                top: 25vw;
+            }
+            #chincheta-5{
+                position: absolute;
+                top: 30vw;
+            }
+            #chincheta-6{
+                position: absolute;
+                top: 32vw;
+                left: 15vw;
+
+            }
+            #chincheta-7{
+                position: absolute;
+                top: 40vw;
+            }
+            #chincheta-8{
+                position: absolute;
+                top: 45vw;
+
+            }
+
+
+.popup{
+    opacity: 0;
+    width: 17vw;
+    height: auto;
+    background-color: white;
+    border-radius: 1vw;
+    border: .1vw solid black;
+    padding: .7vw;
+    transition: opacity .3s ease-in-out;
+    font-family: "Marck Script", sans-serif;
+    z-index: -1;
+}
+
+.show{
+    opacity: 1;
+}
+
+.texto-popup{
+    margin-left: .5vw;
+    font-size: 1vw;
+}
+.titulo-popup{
+    font-size: 2vw;
+    margin-top: .6vw;
+    margin-bottom: .6vw;
+
+}
+
+.descripcion-chincheta{
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+.contenedor-foto{
+    overflow: hidden;
+    width: 100%;
+    height: 9vw;
+}
+
+.foto{
+    border-radius: .8vw;
+}
+
+.boton {
+    font-family: 'Caveat', cursive;
+    border: none;
+    background: none;
+}
+
+.boton span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.boton svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.boton:hover svg {
+    transform: translateX(0);
+}
+
+.boton:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.boton:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+            #popup-1{
+                position: absolute;
+                top: 12vw;
+                left: 40vw;
+            }
+            #popup-2{
+                position: absolute;
+                top: 12vw;
+                left: 50vw;
+            }
+            #popup-3{
+                position: absolute;
+                top: 32vw;
+                left: 19vw;
+            }
+            #popup-4{
+                position: absolute;
+                top: 12vw;
+            }
+            #popup-5{
+                position: absolute;
+                top: 12vw;
+                left: 10vw;
+            }
+            #popup-6{
+                position: absolute;
+                top: 20vw;
+                left: 10vw;
+            }#popup-7{
+                 position: absolute;
+                 top: 23vw;
+                 left: 53vw;
+             }
+            #popup-8{
+                position: absolute;
+                top: 12vw;
+                left: 50vw;
+            }
+
+/* ---------- Plantilla información zona -------------------------------------------------*/
+/* Botón de regreso */
+.volver {
+    display: flex;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5vw;
+    position: relative;
+    top: 1.5vw;
+    left: 1.5vw;
+    background: #FBD148;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 1vw;
+    outline: 0;
+    padding: .5vw .5vw;
+    cursor: pointer;
+    width: 6.5vw;
+    transition: .25s ease;
+}
+
+.flecha{
+    position: relative;
+    left: 1vw;
+    top: .25vw;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.volver::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transform: translate(-.5vw, -.5vw);
+    width: 100%;
+    height: 100%;
+    border: .1vw solid rgb(84, 84, 84);
+    border-radius: 1vw;
+    transition: .25s ease;
+}
+
+.volver:hover {
+    transform: translate(-.5vw, -.5vw);
+}
+
+.volver:hover::before {
+    transform: translate(.5vw, .5vw);
+}
+
+/*Inoformación sobre el lugar*/
+.informacion-lugar{
+    display: flex;
+    margin-top: 7vw;
+    position: relative;
+    justify-content: center;
+}
+
+.presentacion{
+    margin-right: 10vw;
+    font-family: 'Caveat', cursive;
+}
+
+.Nombre-zona{
+    margin-top: 0;
+    font-size: 4.5vw;
+    font-weight: bold;
+}
+.info-texto{
+    font-size: 1.5vw;
+    width: 40vw;
+    text-align: justify;
+    line-height: 2vw;
+}
+.contenedor-dezlizante{
+    margin-top: 3vw;
+    overflow: hidden;
+    width: 30vw;
+    height: 20vw;
+}
+.deslizante{
+    display: flex;
+    transition: transform 1s ease;
+    height: 100%;
+}
+
+.imagen-deslizante{
+    width: 100%;
+}
+
+/* ---------- Información detallada / Historia / Similar ---------------------------------*/
+.contenedor-informacion-detallada{
+    font-family: 'Caveat', cursive;
+    width: 70vw;
+    margin-left: 10vw;
+    margin-top: 7vw;
+}
+
+.titulo-info-detallada{
+    font-size: 2vw;
+}
+
+.detalles{
+    font-size: 1.5vw;
+    text-align: justify;
+}
+/* ---------- Fotos varias ---------------------------------------------------------------*/
+.fotos-del-lugar{
+    margin-top: 6vw;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 2vw;
+}
+.contenedor-fotos-varias{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vw;
+}
+.fotos-varias{
+    display: flex;
+    height: 34.8vw;
+    width: 65vw;
+}
+.contenedor-foto-cuadrada{
+    display: block;
+    width: 45%;
+    height: 100%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.foto-cuadrada{
+    margin-top: 2vw;
+    width: 100%;
+}
+.foto-alta{
+    height: 82%;
+    width: 40%;
+    margin-top: 2vw;
+
+}
+
+/* ---------- Webgrafía ------------------------------------------------------------------*/
+.contendor-webgrafia{
+    font-family: 'Caveat', cursive;
+    background-color: #FBD148;
+    height: 13vw;
+    display: flex;
+}
+
+.otras-paginas{
+    padding-top: .01vw;
+    margin-left: 27vw;
+}
+.contenedor-paginas{
+    margin-left: 5vw;
+}
+.paginas{
+    font-size: 1.3vw;
+    display: list-item;
+    text-decoration: none;
+    color: black;
+    line-height: 1vw;
+}
+.paginas:hover{
+    color: white;
+}
+
+/* Botón de localización */
+.boton-lugar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 20vw;
+}
+.primary-button {
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Valorant', sans-serif; */
+    color: white;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    border: .1vw solid #0E1822;
+    padding: 0.8rem 2.1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-color: #0E1822;
+    background-size: 200%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: background-position, border, color;
+    position: relative;
+    z-index: 1;
+}
+
+.primary-button:hover {
+    border: .1vw solid #FF4655;
+    color: white;
+    background-position: 40%;
+}
+
+.primary-button:before {
+    content: "";
+    position: absolute;
+    background-color: #0E1822;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: -1px;
+    left: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.primary-button:hover:before {
+    background-color: white;
+}
+
+.primary-button:hover:after {
+    background-color: white;
+}
+
+.primary-button:after {
+    content: "";
+    position: absolute;
+    background-color: #FF4655;
+    width: 0.3rem;
+    height: 0.3rem;
+    bottom: -1px;
+    right: -1px;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.button-borders {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button-borders:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    top: -0.3em;
+    border: 1px solid #0E1822;
+    border-bottom: 0px;
+    /* opacity: 0.3; */
+}
+
+.button-borders:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: 50%;
+    left: -0.3em;
+    bottom: -0.3em;
+    border: 1px solid #0E1822;
+    border-top: 0px;
+    /* opacity: 0.3; */
+    z-index: 0;
+}
+
+.shape {
+    fill: #0E1822;
+}
+
+/* ---------- Contacto -------------------------------------------------------------------*/
+#contenedor-pies-de-pagina{
+    position: absolute;
+    top: 51.1vw;
+    width: 100%;
+}
+
+.pie-pagina{
+    background-color: #f7dc6f;
+    height: 20vw;
+    font-family: "Marck Script", sans-serif;
+}
+
+.contacto{
+    height: 7vw;
+    width: 100%;
+
+}
+
+#titulo4{
+    text-align: center;
+    font-size: 4vw;
+    position: relative;
+    top: 1vw;
+    left: 6vw;
+    border-bottom: .1vw solid black;
+    width: 88vw;
+}
+
+.informacion{
+    display: flex;
+}
+
+.bloque-contacto{
+    margin-left: 9vw;
+    justify-content: center;
+    width: 17vw;
+    height: 10vw;
+}
+.icono{
+    margin-top: .6vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+#bloque-ubicacion{
+    font-size: 1.3vw;
+    position: relative;
+    left: 1.3vw;
+    line-height: 2vw;
+}
+#ubicacion, .enlaces{
+    text-decoration: none;
+    color: black;
+}
+#ubicacion:hover, .enlaces:hover{
+    color: white;
+}
+#redes{
+    position: relative;
+    top: .6vw;
+    width: 25vw;
+}
+.text-redes{
+    margin: .5vw;
+    text-align: center;
+    font-family: "Marck Script", sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.bloque-iconos-redes{
+    display: flex;
+    justify-content: center;
+}
+.iconos-redes{
+    margin: 1vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.text-contacto{
+    margin-top: 1.1vw;
+    margin-left: 1vw;
+    font-family: "Marck Script", sans-serif;
+    font-size: 2vw;
+    height: 1vw;
+}
+
+#bloque-enlaces, #bloque-datos{
+    position: relative;
+    left: 3vw;
+}
+.enlaces, .datos{
+    margin-bottom: 1vw;
+    display: list-item;
+    font-size: 1.3vw;
+}
+
+#linea-contacto{
+    color: black;
+
+}
+.copy{
+    background-color: black;
+}
+
+
+
+/* ---------- Easter Egg -----------------------------------------------------------------*/
+.card-client {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2cb5a0;
+    width: 13rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #7cdacc;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.user-picture {
+    overflow: hidden;
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid #7cdacc;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.user-picture svg {
+    width: 2.5rem;
+    fill: currentColor;
+}
+
+.name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #7cdacc;
+}
+
+.social-media a {
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.social-media a svg {
+    width: 1.1rem;
+    fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+    background: #262626;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -90%);
+    transition: all 0.2s ease;
+    z-index: 1;
+}
+
+.tooltip-social:after {
+    content: " ";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+    border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+    opacity: 1;
+    transform: translate(-50%, -130%);
+}
