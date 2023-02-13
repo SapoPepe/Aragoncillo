@@ -875,7 +875,7 @@ body{
 
     /*Información sobre el lugar*/
     .informacion-lugar {
-        margin: 10vw;
+        margin: 7vw;
         position: relative;
         justify-content: center;
     }
@@ -936,9 +936,9 @@ body{
         width: auto;
         height: auto;
         margin: 0;
-        padding-left: 10vw;
+        padding-left: 7vw;
         padding-top: 5vw;
-        padding-right: 10vw;
+        padding-right: 7vw;
     }
 
     .titulo-info-detallada {
