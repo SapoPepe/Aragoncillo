@@ -1,0 +1,272 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.contenedor-comun{
+    width: 100%;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    /* ----------------------------------------------------------------------------------------------*/
+    .logo1 {
+        display: block; /* Se convierte al logo1 en un bloque */
+        float: left; /* Hace que flote a la izquierda */
+        height: 44px; /* Establece la altura y anchura de la imagen */
+        width: 39px;
+        margin-top: 4px;
+    }
+
+    .logo2 {
+        display: block; /* Se convierte al logo1 en un bloque */
+        float: right; /* Hace que flote a la derecha */
+        height: 44px; /* Establece la altura y anchura de la imagen */
+        width: 39px;
+        margin-top: 4px;
+    }
+
+    .item {
+        margin: 1em; /* Margen entre palabra y palabra */
+        color: black;
+        font-size: 34px; /* Tamaño de letra*/
+        font-family: 'Marck Script', sans-serif; /* Selecciona el tipo de letra (tiene que estar linkeado en el head)*/
+        text-decoration: none; /* Elimina el subrayado que viene de base para los link a otras páginas */
+    }
+
+    .text-menu {
+        display: table; /* Convierte a las diferentes etiquetas <a> en una tabla */
+        margin: 0 auto; /* Aliena la tabla al centro de la pantalla automaticamente */
+        margin-top: 5px;
+    }
+
+    .bloque-menu {
+        background-color: #F7DC6F; /* Color del menú */
+        overflow: hidden; /* Antes estaba hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 683px) {
+        .item {
+            font-size: 14px;
+            margin: .5em;
+        }
+
+        .inicio {
+            height: 40px;
+        }
+
+        .logo1 {
+            height: 24px;
+            width: 21px;
+        }
+
+        .logo2 {
+            height: 24px;
+            width: 21px;
+        }
+
+        .bloque-menu {
+            height: 30px;
+        }
+
+    }
+
+    /* ----- Cartel de fiestas ----------------------------------------------------- */
+    .bloque-cartel{
+        margin-top: 5vw;
+    }
+
+    /* Cartel de fiestas */
+    .card {
+        --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+        width: 31vw;
+        height: 40.4vw;
+        padding: .5vw;
+        border-radius: 1vw;
+        overflow: visible;
+        background: #f7ba2b;
+        background: var(--background);
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    .card::after {
+        position: absolute;
+        content: "";
+        top: 30px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(0.8);
+        filter: blur(7vw);
+        background: #f7ba2b;
+        background: var(--background);
+        transition: opacity .5s;
+    }
+
+    .card-info {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .card .title {
+        width: 100%;
+        height: 100%;
+        border-radius: 1vw;
+    }
+
+    /* Botón descargar */
+    .btn-descarga {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        background-image: linear-gradient(to top, #f7ba2b 0%, #ea5358 100%);
+        border: solid 3px transparent;
+        background-clip: padding-box;
+        color: black;
+        padding: 0 1.3vw 0 1.3vw;
+        border-radius: 5vw;
+        text-transform: uppercase;
+        letter-spacing: .1vw;
+        transition: all .5s ease;
+        height: 3vw;
+        margin: 0 auto;
+        margin-top: 2vw;
+    }
+
+    .btn-descarga img{
+        height: 50%;
+    }
+
+
+}
+
+/************************************************************************************/
+/*       Formato móvil                                                              */
+/************************************************************************************/
+@media (max-aspect-ratio: 1/1) {
+    /* ----------------------------------------------------------------------------------------------*/
+    .logo1 {
+        display: block; /* Se convierte al logo1 en un bloque */
+        float: left; /* Hace que flote a la izquierda */
+        height: 11vw; /* Establece la altura y anchura de la imagen */
+        width: 9.5vw;
+        margin: 1vw;
+    }
+
+    .logo2 {
+        display: block; /* Se convierte al logo1 en un bloque */
+        float: right; /* Hace que flote a la derecha */
+        height: 11vw; /* Establece la altura y anchura de la imagen */
+        width: 9.5vw;
+        margin: 1vw;
+    }
+
+    .item {
+        margin: .5em; /* Margen entre palabra y palabra */
+        color: black;
+        font-size: 5vw; /* Tamaño de letra*/
+        font-family: 'Marck Script', sans-serif; /* Selecciona el tipo de letra (tiene que estar linkeado en el head)*/
+        text-decoration: none; /* Elimina el subrayado que viene de base para los link a otras páginas */
+    }
+
+    .text-menu {
+        display: table; /* Convierte a las diferentes etiquetas <a> en una tabla */
+        margin: 0 auto; /* Aliena la tabla al centro de la pantalla automaticamente */
+        margin-top: 4vw;
+        width: 75vw;
+    }
+
+    .bloque-menu {
+        background-color: #F7DC6F; /* Color del menú */
+        overflow: hidden; /* Antes estaba hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;       /*Cambiar a 100% cuando se termine de configurar*/
+        height: auto;
+        z-index: 2;
+    }
+
+    /* ----- Cartel de fiestas ----------------------------------------------------- */
+    .bloque-cartel{
+        margin-top: 20vw;
+    }
+
+    /* Cartel de fiestas */
+    .card {
+        --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+        width: 81vw;
+        height: 100.4vw;
+        padding: .5vw;
+        border-radius: 1vw;
+        overflow: visible;
+        background: var(--background);
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    .card::after {
+        position: absolute;
+        content: "";
+        top: 30px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(0.8);
+        filter: blur(15vw);
+        background: #f7ba2b;
+        background: var(--background);
+        transition: opacity .5s;
+    }
+
+    .card-info {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .card .title {
+        width: 100%;
+        height: 100%;
+        border-radius: 1vw;
+    }
+
+    /* Botón descargar */
+    .btn-descarga {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        background-image: linear-gradient(to top, #f7ba2b 0%, #ea5358 100%);
+        border: solid 3px transparent;
+        background-clip: padding-box;
+        color: black;
+        padding: 0 3vw 0 3vw;
+        border-radius: 5vw;
+        text-transform: uppercase;
+        letter-spacing: .1vw;
+        font-size: 3vw;
+        transition: all .5s ease;
+        height: 10vw;
+        margin: 0 auto;
+        margin-top: 2vw;
+    }
+
+    .btn-descarga img{
+        height: 50%;
+    }
+
+}
