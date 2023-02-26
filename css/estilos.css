@@ -892,7 +892,7 @@ body{
     .item {
         margin: .5em; /* Margen entre palabra y palabra */
         color: black;
-        font-size: 5vw; /* Tamaño de letra*/
+        font-size: 4vw; /* Tamaño de letra*/
         font-family: 'Marck Script', sans-serif; /* Selecciona el tipo de letra (tiene que estar linkeado en el head)*/
         text-decoration: none; /* Elimina el subrayado que viene de base para los link a otras páginas */
     }
