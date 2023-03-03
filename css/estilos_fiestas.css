@@ -124,8 +124,18 @@ body{
         background: #f7ba2b;
         background: var(--background);
         transition: opacity .5s;
+        animation: spin 5s linear infinite;
     }
 
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
     .card-info {
         width: 100%;
         height: 100%;
@@ -720,7 +730,17 @@ body{
         filter: blur(15vw);
         background: #f7ba2b;
         background: var(--background);
-        transition: opacity .5s;
+        transition: opacity .5
+        animation: spin 5s linear infinite;
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
 
     .card-info {
