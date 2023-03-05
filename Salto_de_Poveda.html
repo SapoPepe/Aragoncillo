@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="img/logotipo.ico">
+
+  <link rel="stylesheet" href="css/estilos_zonas.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API"></script>
+
+
+  <!-- Linkea Google Frots con el html para importar un estilo de letras en específico -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>Salto de Poveda</title>
+
+</head>
+<body>
+<div class="contenedor-comun">
+  <!-- Botón de regreso -->
+  <div class="contenedor-boton-volver">
+    <a href="Zonas.html" style="text-decoration: none">
+      <button class="volver">
+        <div>Volver</div>
+        <div class="flecha">
+          <img src="img/flecha.png" style="width: 100%; height: 100%">
+        </div>
+      </button>
+    </a>
+  </div>
+
+  <!-- Presentación de la zona -->
+  <div class="informacion-lugar">
+    <div class="presentacion">
+      <h1 class="Nombre-zona">Salto de Poveda</h1>
+      <p class="info-texto">El Salto de Poveda se localiza dentro del Parque Natural del Alto Tajo en el lugar de una antigua presa, que no llegó a terminarse, y que hoy se ha convertido en un impresionante salto de agua de más de 20 metros de altura permitiéndonos contemplar el lado más fuerte de la naturaleza desde un lugar privilegiado para nuestros ojos. También hay que destacar que en este idílico paraje no hay ningún tipo de cobertura por lo que es perfecto para conectar con la naturaleza y con nosotros.</p>
+    </div>
+    <!-- Foto en movimiento -->
+    <div class="contenedor-dezlizante">
+      <div class="deslizante">
+        <img class="imagen-deslizante" id="deslizante1" src="img/Poveda/aerea.jpg" alt="Imagen-1">
+        <img class="imagen-deslizante" id="deslizante2" src="img/Poveda/puente.jpg" alt="Imagen-2">
+        <img class="imagen-deslizante" id="deslizante3" src="img/Poveda/cascada.png" alt="Imagen-3">
+      </div>
+      <div class="deslizante-firefox">
+        <img class="imagen-firefox"  src="img/Poveda/aerea.jpg" alt="Imagen-1">
+        <img class="imagen-firefox"  src="img/Poveda/puente.jpg" alt="Imagen-2">
+        <img class="imagen-firefox"  src="img/Poveda/cascada.png" alt="Imagen-3">
+      </div>
+    </div>
+  </div>
+  <script src="js/deslizante.js"></script>
+
+
+  <!-- Información detallada sobre el lugar -->
+  <div class="contenedor-informacion-detallada">
+    <h2 class="titulo-info-detallada">Información detallada del lugar</h2>
+    <p class="detalles">Para llegar al Salto de Poveda se puede hacer de dos maneras: en coche, ya que contamos con una carretera forestal y con una zona de parking cerca de la cascada; o andando, que es la opción más recomendada, ya que disfrutarás mucho más del recorrido y además, si tienes un poco de suerte, podrás ver algún ciervo cor las colinas de las montañas.</p>
+    <p class="detalles">En cuanto al tema de la comida, se puede llevar uno su propia comida o te puedes acercar al bar de la casa rural que se encuentra a tiro de piedra del salto. Allí podrás disfrutar de una buena Coca-Cola fresquita o comer unos pinchos escuchando a los pájaros de la zona. Si después de comer te sientes aventurero, puedes seguir camino arriba por un sendero que nos llevará al área recreativa del puente colgante. Hecho de madera, se trata del único paso posible hacia el lado contrario del río y se encuentra sobre aguas turquesas y cristalinas que alimentarán más tarde al salto.</p>
+    <p class="detalles">Por último, si seguimos andando hacia arriba nos encontraremos con la conjunción de 3 caminos. El camino del centro nos conducirá hasta la laguna de Taravilla. Su agua proviene mayormente de manantiales cercanos a la laguna aunque también posee una aportación de caudal de un arroyo. La laguna está represada por una barrera de toba natural que impide que descargue toda su agua sobre el río Tajo. Solo en época de lluvias el agua rebosa sobre la represa formando una bonita cascada.</p>
+  </div>
+
+  <!-- Fotos varias -->
+  <div class="contenedor-matriz-fotos">
+    <h2 class="fotos-del-lugar">Algunas fotos del lugar</h2>
+    <div class="fotos-varias">
+      <div id="cont-1">
+        <div class="contenedor-foto-cuadrada">
+          <img class="foto-cuadrada-1" src="img/Poveda/embalse.jpg" alt="Imagen-4">
+          <img class="foto-cuadrada-1" src="img/Poveda/indicaciones.jpg" alt="Imagen-5">
+        </div>
+        <div class="foto-alta">
+          <video id="horizontal" width="100%" height="97.7%" loop autoplay>
+            <source src="img/Poveda/video_cascada.mp4" type="video/mp4">
+            Tu navegador no admite la etiqueta de video.
+          </video>
+          <video id="vertical" width="100%" height="97.7%" loop autoplay>
+            <source src="img/Poveda/video_cascada_2.mp4" type="video/mp4">
+            Tu navegador no admite la etiqueta de video.
+          </video>
+          <script src="js/videos.js"></script>
+        </div>
+      </div>
+      <div class="contenedor-foto-cuadrada" id="cont-2">
+        <img class="foto-cuadrada-2" src="img/Poveda/cascada_2.jpg" alt="Imagen-4">
+        <img class="foto-cuadrada-2" src="img/Poveda/puente_2.jpg" alt="Imagen-5">
+      </div>
+    </div>
+  </div>
+
+  <!-- Webgrafía del lugar -->
+  <footer class="contendor-webgrafia">
+    <div class="otras-paginas">
+      <u><h2 id="titulo-otras-paginas">Otras páginas</h2></u>
+      <div class="contenedor-paginas">
+        <a class="paginas" href="https://www.castillalamanchafilm.com/menu/localizaciones/id40-salto-de-poveda-y-laguna-de-taravilla--alto-tajo.htm"><p>Film Commision</p></a>
+        <a class="paginas" href="https://www.unplanetaporviajar.com/parque-natural-del-alto-tajo/"><p>Un Planeta por Viajar</p></a>
+        <a class="paginas" href="https://www.exploraturuta.com/ruta-del-salto-de-poveda-y-laguna-de-taravilla/"><p>Explora tu ruta</p></a>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center">
+      <div class="boton-lugar">
+        <div class="button-borders">
+          <a href="https://goo.gl/maps/mxqBrQw4WUidmKwSA"><button class="primary-button">¿Cómo llegar?</button></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="pie-negro">
+    <a class="show-card-client"><div>Aragoncillo ©</div>
+    </a>
+  </footer>
+
+</div>
+</body>
+</html>
